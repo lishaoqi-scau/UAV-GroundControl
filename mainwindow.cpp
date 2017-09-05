@@ -64,8 +64,8 @@ MainWindow::MainWindow(QWidget *parent) :
 
 void MainWindow::ShowLocation(QString strLon,QString strLat)
 {
-    mlabelLon->setText(tr("经度：")+strLon);
-    mlabelLat->setText(tr("纬度：")+strLat);
+    mlabelLon->setText(tr("当前经度：")+strLon);
+    mlabelLat->setText(tr("当前纬度：")+strLat);
 }
 
 void MainWindow::StopPlay()
