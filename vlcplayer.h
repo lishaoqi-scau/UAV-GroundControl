@@ -11,6 +11,8 @@
 #include <QPalette>
 #include <QFileDialog>
 
+
+
 class VLCPlayer : public QThread
 {
     Q_OBJECT
@@ -36,6 +38,7 @@ public slots:
     void changeVolume(int vol);
     void openFile(QString strURL);
     void LoadRTSPStream(QString strURL);
+    void FullWidget(int x,int y);
 private:
 
     QWidget * mPlayWidgetView; //播放界面控件

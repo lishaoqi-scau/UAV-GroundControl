@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>GCSDisplay</class>
+ <widget class="QMainWindow" name="GCSDisplay">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="File_menu">
+    <property name="title">
+     <string>文件</string>
+    </property>
+    <addaction name="Exitaction"/>
+   </widget>
+   <widget class="QMenu" name="Communicate_menu">
+    <property name="title">
+     <string>通讯</string>
+    </property>
+    <addaction name="Serialaction"/>
+    <addaction name="Networkaction"/>
+    <addaction name="actionFPV"/>
+   </widget>
+   <widget class="QMenu" name="Control_menu">
+    <property name="title">
+     <string>控制</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="FlightParate_menu">
+    <property name="title">
+     <string>飞行准备</string>
+    </property>
+    <addaction name="FlyPrepareaction"/>
+   </widget>
+   <widget class="QMenu" name="AirLine_menu">
+    <property name="title">
+     <string>航线</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="Telemeter_menu">
+    <property name="title">
+     <string>遥测</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="RemoteControl_menu">
+    <property name="title">
+     <string>遥控</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="Display_menu">
+    <property name="title">
+     <string>显示</string>
+    </property>
+    <addaction name="FPVaction"/>
+    <addaction name="Mapaction"/>
+    <addaction name="FlyDataaction"/>
+   </widget>
+   <widget class="QMenu" name="Record_menu">
+    <property name="title">
+     <string>记录</string>
+    </property>
+    <addaction name="Recordaction"/>
+    <addaction name="Downloadaction"/>
+    <addaction name="Replayaction"/>
+   </widget>
+   <widget class="QMenu" name="Load_menu">
+    <property name="title">
+     <string>载荷</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="Update_menu">
+    <property name="title">
+     <string>更新</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="Help_menu">
+    <property name="title">
+     <string>帮助</string>
+    </property>
+   </widget>
+   <addaction name="File_menu"/>
+   <addaction name="Communicate_menu"/>
+   <addaction name="Control_menu"/>
+   <addaction name="FlightParate_menu"/>
+   <addaction name="AirLine_menu"/>
+   <addaction name="Telemeter_menu"/>
+   <addaction name="RemoteControl_menu"/>
+   <addaction name="Display_menu"/>
+   <addaction name="Record_menu"/>
+   <addaction name="Load_menu"/>
+   <addaction name="Update_menu"/>
+   <addaction name="Help_menu"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <action name="FPVaction">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>FPV</string>
+   </property>
+  </action>
+  <action name="Mapaction">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Map</string>
+   </property>
+  </action>
+  <action name="Serialaction">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>串口连接</string>
+   </property>
+  </action>
+  <action name="Networkaction">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>网络连接</string>
+   </property>
+  </action>
+  <action name="Exitaction">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>退出</string>
+   </property>
+  </action>
+  <action name="FlyDataaction">
+   <property name="text">
+    <string>飞行数据</string>
+   </property>
+  </action>
+  <action name="Recordaction">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>记录</string>
+   </property>
+  </action>
+  <action name="Downloadaction">
+   <property name="text">
+    <string>下载</string>
+   </property>
+  </action>
+  <action name="Replayaction">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>回放</string>
+   </property>
+  </action>
+  <action name="actionFPV">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>FPV连接</string>
+   </property>
+  </action>
+  <action name="FlyPrepareaction">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>飞行前检查</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

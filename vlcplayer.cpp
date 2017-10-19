@@ -21,7 +21,7 @@ void VLCPlayer::SetPlayWidget(QWidget *PlayWidget)
 #if 1
     mPlayWidgetView->setAutoFillBackground( true );
     QPalette plt = this->mPlayWidgetView->palette();
-    plt.setColor( QPalette::Window, Qt::black );
+    plt.setColor( QPalette::Window, Qt::red );
     mPlayWidgetView->setPalette( plt );
 #endif
 }
@@ -137,7 +137,12 @@ void VLCPlayer::openFile(QString strURL)
         return;
     /* Create a new libvlc player */
     vlcPlayer = libvlc_media_player_new_from_media (vlcMedia);
-
+    QString str1=QString("%1:%2").arg(mPlayWidgetView->width()).arg(mPlayWidgetView->height());
+    qDebug()<<"WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW"<<str1<<"tttttt"<<mPlayWidgetView->width()<<mPlayWidgetView->height();
+    if(vlcPlayer !=NULL)
+    {
+        libvlc_video_set_aspect_ratio(vlcPlayer,str1.toLocal8Bit().data());
+    }
     /* Release the media */
     libvlc_media_release(vlcMedia);
 
@@ -150,6 +155,16 @@ void VLCPlayer::openFile(QString strURL)
 
     /* Update playback button */
 
+}
+
+void VLCPlayer::FullWidget(int x, int y)
+{
+    QString str1=QString("%1:%2").arg(x).arg(y);
+
+    if(vlcPlayer !=NULL)
+    {
+        libvlc_video_set_aspect_ratio(vlcPlayer,str1.toLocal8Bit().data());
+    }
 }
 
 

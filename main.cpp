@@ -1,15 +1,15 @@
-#include <QtGui/QApplication>
- #include <QTextCodec>
-#include "mainwindow.h"
+ï»¿#include "mainwindow.h"
+#include <QApplication>
 
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-    QTextCodec::setCodecForLocale(QTextCodec::codecForName("GBK")); //Â·¾¶ÃûÖ§³ÖÖĞÎÄ
-    QTextCodec::setCodecForTr(QTextCodec::codecForName("GBK")); //QStringÖ§³ÖÖĞÎÄ
-    QTextCodec::setCodecForCStrings(QTextCodec::codecForName("GBK")); //stringÖ§³ÖÖĞÎÄ
+    QTextCodec::setCodecForLocale(QTextCodec::codecForName("GBK")); //è·¯å¾„åæ”¯æŒä¸­æ–‡
+//        QTextCodec::setCodecForTr(QTextCodec::codecForName("GBK")); //QStringæ”¯æŒä¸­æ–‡
+//        QTextCodec::setCodecForCStrings(QTextCodec::codecForName("GBK")); //stringæ”¯æŒä¸­æ–‡
+    a.setWindowIcon(QIcon("://new/GCSProcess/png/GCS.png"));
     MainWindow w;
-    w.show();
-    
+//    w.show();
+
     return a.exec();
 }

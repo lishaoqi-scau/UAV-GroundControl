@@ -1,0 +1,72 @@
+<?xml Version="1.0" encoding="utf-8"?>
+<AnyCAD.Plugin version="1.0">
+	<m_Plugins>
+		<type type="string">vector</type>
+		<size type="int">11</size>
+		<item>
+			<value type="APluginItem">
+				<m_Name type="string">Plugin.Viz.GL</m_Name>
+				<m_DllName type="string">AnyVizGL.dll</m_DllName>
+				<m_Category type="string">System</m_Category>
+			</value>
+		</item>
+		<item>
+			<value type="APluginItem">
+				<m_Name type="string">Plugin.Viz.GLPS</m_Name>
+				<m_DllName type="string">AnyVizGLPS.dll</m_DllName>
+				<m_Category type="string">System</m_Category>
+			</value>
+		</item>
+		<item>
+			<value type="APluginItem">
+				<m_Name type="string">Plugin.Render.Viz</m_Name>
+				<m_DllName type="string">AnyVizView.dll</m_DllName>
+				<m_Category type="string">System</m_Category>
+			</value>
+		</item>
+		<item>
+			<value type="APluginItem">
+				<m_Name type="string">Plugin.Render.Font</m_Name>
+				<m_DllName type="string">AnyVizFont.dll</m_DllName>
+				<m_Category type="string">System</m_Category>
+			</value>
+		</item>
+		<item>
+			<value type="APluginItem">
+				<m_Name type="string">Plugin.Exchange.Core</m_Name>
+				<m_DllName type="string">AnyExchangeCore.dll</m_DllName>
+				<m_Category type="string">System</m_Category>
+			</value>
+		</item>
+		<item>
+			<value type="APluginItem">
+				<m_Name type="string">Plugin.Exchange.DXF</m_Name>
+				<m_DllName type="string">AnyExchangeDXF.dll</m_DllName>
+				<m_Category type="string">System</m_Category>
+			</value>
+		</item>
+		<item>
+			<value type="APluginItem">
+				<m_Name type="string">Plugin.Script.Lua</m_Name>
+				<m_DllName type="string">AnyLuaEngine.dll</m_DllName>
+				<m_Category type="string">System</m_Category>
+			</value>
+		</item>
+		<item>
+			<value type="APluginItem">
+				<m_Name type="string">Plugin.Geom.Editor</m_Name>
+				<m_DllName type="string">AnyGeomEditor.dll</m_DllName>
+				<m_Category type="string">System</m_Category>
+			</value>
+		</item>
+		<item>
+			<value type="APluginItem">
+				<m_Name type="string">Plugin.Entity.Editor</m_Name>
+				<m_DllName type="string">AnyEntityEditor.dll</m_DllName>
+				<m_Category type="string">System</m_Category>
+			</value>
+		</item>
+	</m_Plugins>
+	<m_ViewFactory type="string">AView3dFactory</m_ViewFactory>
+</AnyCAD.Plugin>
+

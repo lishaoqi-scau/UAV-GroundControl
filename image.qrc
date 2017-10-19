@@ -1,0 +1,19 @@
+<RCC>
+    <qresource prefix="/new/toolbar">
+        <file>png/ChangeMove.png</file>
+        <file>png/ClearRoute.png</file>
+        <file>png/CoursePlot.png</file>
+        <file>png/FindUAV.png</file>
+        <file>png/mousepass.png</file>
+        <file>png/RecordData.png</file>
+        <file>png/RouteDisplay.png</file>
+        <file>png/ScalePlate.png</file>
+        <file>png/Setting.png</file>
+        <file>png/ShowGrid.png</file>
+        <file>png/ZoomAdd.png</file>
+        <file>png/ZoomSub.png</file>
+    </qresource>
+    <qresource prefix="/new/GCSProcess">
+        <file>png/GCS.png</file>
+    </qresource>
+</RCC>
